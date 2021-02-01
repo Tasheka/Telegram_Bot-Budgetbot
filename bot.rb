@@ -25,6 +25,15 @@ Telegram::Bot::Client.run(token) do |bot|
     when '/Income'
         bot.api.send_message(chat_id: message.chat.id, text: "Enter your basic salary amount.")
 
+   else
+     $income.push(message.text.to_i)
+     bot.api.send_message(chat_id: message.chat.id, text: "Enter any additional income earned.")
+     bot.api.send_message(chat_id: message.chat.id, text: "Select 'Expenses' when you have no more incomes to enter. \n /Expenses")
+
+    end
+
+
+    case message.text
     when '/Expenses'
         tip = RandomTipsTricks.new
         bot.api.send_message(chat_id: message.chat.id, text: "Your total income is $#{tip.total_income}")
@@ -51,25 +60,14 @@ Telegram::Bot::Client.run(token) do |bot|
         bot.api.send_message(chat_id: message.chat.id, text: "Select 'Back to Expenses' to view the list of expenses. \n /BackToExpenses")
 
     when '/BackToExpenses'
-        $expense.push(message.text.to_i)
         bot.api.send_message(chat_id: message.chat.id, text: "Select the expense you want to enter: \n /Rent \n /Food \n /Transportation \n /Bills \n /AdditionalExpenses")
         bot.api.send_message(chat_id: message.chat.id, text: "Select 'Calculate' when you are finished entering your expenses: \n /Calculate")
     
     when '/Calculate'
         tip = RandomTipsTricks.new
         bot.api.send_message(chat_id: message.chat.id, text: "Your total expense is $#{tip.total_expense}")
-
-   # else
-     #$income.push(message.text.to_i)
-     #bot.api.send_message(chat_id: message.chat.id, text: "You typed #{$income}")
-     #bot.api.send_message(chat_id: message.chat.id, text: "Enter any additional income earned.")
-    # bot.api.send_message(chat_id: message.chat.id, text: "Select 'Expenses' when you have no more incomes to enter. \n /Expenses")
-
-    # case message.text
-    # when '/hello'
-    # else
-    #     $additional_income = message.text.to_i
-    #     bot.api.send_message(chat_id: message.chat.id, text: "You typed #{$additional_income}")
+    else
+        $expense.push(message.text.to_i)
     end
   end
 end

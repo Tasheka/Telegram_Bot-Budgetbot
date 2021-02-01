@@ -11,6 +11,7 @@ class RandomTipsTricks
     ]
 
     $income = []
+    
     $expense = []
 
   def random_tips_tricks
