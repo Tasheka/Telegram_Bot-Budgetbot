@@ -3,8 +3,8 @@ Ruby Capstone: Telegram Bot - Budgetbot
 
 This project is a bot created  usinng telegram that takes a users incomes and expenses, and calculates the total income, total expenses and the remaining amount the user will have once he/she has paid his//her expenses. The bot also gives random financial tips and tricks when requested.
 
-![screenshot](assets/screeshot_tip.png)
-![screenshot](assets/screeshot_budget.png)
+![screenshot](assets/screenshot_tip.png)
+![screenshot](assets/screenshot_budget.png)
 
 ## Built With
 
