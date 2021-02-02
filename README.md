@@ -16,6 +16,23 @@ This project is a bot created  usinng telegram that takes a users incomes and ex
 
 [Live Demo Link]()
 
+## Getting Started
+
+To run this bot locally, you will need to have:
+
+- A Telegram account
+- Ruby installed
+- Rspec installed
+- Gems installed
+- A terminal
+
+Once you have all the above listed:
+
+- Create a clone of this repository. 
+- In your terminal, run the bot.rb file.
+- Search Budgetbot in Telegram
+- Select 'start' to begin
+
 ## Financial Tips and Tricks Origin
 
 The tip annd tricks quotes were taken from the following websites: https://www.thebalance.com/top-ten-financial-tips-1289309 and https://www.oberlo.com/blog/personal-finance-tips

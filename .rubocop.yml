@@ -11,7 +11,7 @@ GlobalVars:
     - $salary
     - $additional_income
     - $expense
-    - $incomes
+    - $income
     - $count
     - $countIncome
 

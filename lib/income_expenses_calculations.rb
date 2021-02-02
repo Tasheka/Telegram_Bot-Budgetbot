@@ -1,12 +1,11 @@
 class Calculations
+  $income = []
 
-    $income = []
+  $expense = []
 
-    $expense = []
+  $countIncome = 0
 
-    $countIncome =  0
-    
-    $count = $countIncome
+  $count = $countIncome
 
   def total_income
     $income[0..$countIncome].sum
@@ -19,5 +18,4 @@ class Calculations
   def left_over
     $income[0..$countIncome].sum - $expense[$countIncome..$count].sum
   end
-
 end
