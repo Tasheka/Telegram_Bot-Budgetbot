@@ -13,6 +13,7 @@ GlobalVars:
     - $expense
     - $incomes
     - $count
+    - $countIncome
 
 Layout/LineLength:
     Max: 120

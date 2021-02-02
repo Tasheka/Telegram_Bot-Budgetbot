@@ -10,25 +10,9 @@ class RandomTipsTricks
       "Find Ways to Increase Your Income: \n Find a way to make more money to improve your financial situation."
     ]
 
-    $income = []
-
-    $expense = []
-
-    $count = 0
-
-    #counter = $count
-
-  def random_tips_tricks
-    $tips_and_tricks[rand(0..4)]
-  end
-
-  def total_income
-    $income.sum
-  end
-
-  def total_expense
-    $expense[0..$count-1].sum
-  end
+    def random_tips_tricks
+        $tips_and_tricks[rand(0..4)]
+    end
 
 end
 
