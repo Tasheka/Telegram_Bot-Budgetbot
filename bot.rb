@@ -52,22 +52,27 @@ Telegram::Bot::Client.run(token) do |bot|
     when '/Rent'
         bot.api.send_message(chat_id: message.chat.id, text: "Enter the amount you pay for rent.")
         bot.api.send_message(chat_id: message.chat.id, text: "Select 'Back to Expenses' to view the list of expenses. \n /BackToExpenses")
+        $count += 1
 
     when '/Food'
         bot.api.send_message(chat_id: message.chat.id, text: "Enter the amount you pay for food.")
         bot.api.send_message(chat_id: message.chat.id, text: "Select 'Back to Expenses' to view the list of expenses. \n /BackToExpenses")
+        $count += 1
 
     when '/Transportation'
         bot.api.send_message(chat_id: message.chat.id, text: "Enter the amount you pay for transportation.")
         bot.api.send_message(chat_id: message.chat.id, text: "Select 'Back to Expenses' to view the list of expenses. \n /BackToExpenses")
+        $count += 1
 
     when '/Bills'
         bot.api.send_message(chat_id: message.chat.id, text: "Enter the amount you pay for bills")
         bot.api.send_message(chat_id: message.chat.id, text: "Select 'Back to Expenses' to view the list of expenses. \n /BackToExpenses")
+        $count += 1
 
     when '/AdditionalExpenses'
         bot.api.send_message(chat_id: message.chat.id, text: "Enter the amount you pay for additional expenses")
         bot.api.send_message(chat_id: message.chat.id, text: "Select 'Back to Expenses' to view the list of expenses. \n /BackToExpenses")
+        $count += 1
 
     when '/BackToExpenses'
         bot.api.send_message(chat_id: message.chat.id, text: "Select the expense you want to enter: \n /Rent \n /Food \n /Transportation \n /Bills \n /AdditionalExpenses")

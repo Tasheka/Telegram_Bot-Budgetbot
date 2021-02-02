@@ -11,8 +11,12 @@ class RandomTipsTricks
     ]
 
     $income = []
-    
+
     $expense = []
+
+    $count = 0
+
+    #counter = $count
 
   def random_tips_tricks
     $tips_and_tricks[rand(0..4)]
@@ -23,7 +27,7 @@ class RandomTipsTricks
   end
 
   def total_expense
-    $expense.sum
+    $expense[0..$count-1].sum
   end
 
 end

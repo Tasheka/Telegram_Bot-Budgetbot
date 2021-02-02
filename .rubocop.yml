@@ -12,6 +12,7 @@ GlobalVars:
     - $additional_income
     - $expense
     - $incomes
+    - $count
 
 Layout/LineLength:
     Max: 120
