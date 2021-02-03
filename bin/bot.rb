@@ -1,10 +1,16 @@
+#!/usr/bin/env ruby
+
 # rubocop:disable Layout/LineLength
 # rubocop:disable  Metrics/BlockLength
 
 require 'telegram/bot'
 
+require_relative '../token'
 require_relative '../lib/tips_tricks_list'
 require_relative '../lib/income_expenses_calculations'
+
+ token_config = TokenConfiguration.new
+ token = token_config.token
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
