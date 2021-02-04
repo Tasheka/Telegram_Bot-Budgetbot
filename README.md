@@ -33,10 +33,10 @@ Once you have all the above listed:
   - From your terminal move into the cloned repository folder by using the 'cd' command
 - In your terminal, type 'bundle install' to  install the required gems
 - Create a 'token.rb' file. 
-- In this token.rb file, create a class called 'TokenConfiguration', containinng a method called 'token'. Paste the provided token in the method.
+- In this token.rb file, create a class called 'TokenConfiguration', containinng a method called 'token'. Paste the provided token in the method inside single quotes ' '.
 - From your terminal move into the bin folder by using the 'cd' command
 - Run the bot.rb file by typing 'bot.rb' in your terminal.
-- Search Budgetbot in Telegram
+- Search for your bot in Telegram
 - Select the 'start' button to begin or type '/start' to begin
 
 To test this bot using Rspec:
