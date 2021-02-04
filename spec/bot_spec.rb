@@ -9,8 +9,8 @@ describe RandomTipsTricks do
     end
 
     it 'does not return a number' do
-        random_tips = RandomTipsTricks.new
-        expect(random_tips.output_tip.class).not_to eq(Integer)
+      random_tips = RandomTipsTricks.new
+      expect(random_tips.output_tip.class).not_to eq(Integer)
     end
   end
 end
@@ -23,8 +23,8 @@ describe Calculations do
     end
 
     it 'calculates and outputs the total income entered by a user' do
-        cal = Calculations.new
-        expect(cal.total_income.class).not_to eq(String)
+      cal = Calculations.new
+      expect(cal.total_income.class).not_to eq(String)
     end
   end
 
@@ -35,8 +35,8 @@ describe Calculations do
     end
 
     it 'calculates and outputs the total expenses entered by a user' do
-        cal = Calculations.new
-        expect(cal.total_expense.class).not_to eq(String)
+      cal = Calculations.new
+      expect(cal.total_expense.class).not_to eq(String)
     end
   end
 
@@ -47,8 +47,8 @@ describe Calculations do
     end
 
     it 'calculates and outputs the difference between the total income and total expense entered by a user' do
-        cal = Calculations.new
-        expect(cal.left_over.class).not_to eq(String)
+      cal = Calculations.new
+      expect(cal.left_over.class).not_to eq(String)
     end
   end
 end

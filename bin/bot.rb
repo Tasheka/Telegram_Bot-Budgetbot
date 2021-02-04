@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
 # rubocop:disable Layout/LineLength
-# rubocop:disable  Metrics/BlockLength
+# rubocop:disable Metrics/BlockLength
+# rubocop:disable Style/GlobalVars
 
 require 'telegram/bot'
 
@@ -9,8 +10,8 @@ require_relative '../token'
 require_relative '../lib/tips_tricks_list'
 require_relative '../lib/income_expenses_calculations'
 
- token_config = TokenConfiguration.new
- token = token_config.token
+token_config = TokenConfiguration.new
+token = token_config.token
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
@@ -107,4 +108,5 @@ Telegram::Bot::Client.run(token) do |bot|
 end
 
 # rubocop:enable Layout/LineLength
-# rubocop:enable  Metrics/BlockLength
+# rubocop:enable Metrics/BlockLength
+# rubocop:enable Style/GlobalVars
