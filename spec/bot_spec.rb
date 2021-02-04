@@ -8,7 +8,7 @@ describe RandomTipsTricks do
       expect(random_tips.output_tip.class).to eq(String)
     end
 
-    it 'gives does not return a number' do
+    it 'does not return a number' do
         random_tips = RandomTipsTricks.new
         expect(random_tips.output_tip.class).not_to eq(Integer)
     end
@@ -17,36 +17,36 @@ end
 
 describe Calculations do
   describe '#total_income' do
-    it 'calculates annd outputs the total income entered by a user' do
+    it 'calculates and outputs the total income entered by a user' do
       cal = Calculations.new
       expect(cal.total_income.class).to eq(Integer)
     end
 
-    it 'calculates annd outputs the total income entered by a user' do
+    it 'calculates and outputs the total income entered by a user' do
         cal = Calculations.new
         expect(cal.total_income.class).not_to eq(String)
     end
   end
 
   describe '#total_expense' do
-    it 'calculates annd outputs the total expenses entered by a user' do
+    it 'calculates and outputs the total expenses entered by a user' do
       cal = Calculations.new
       expect(cal.total_expense.class).to eq(Integer)
     end
 
-    it 'calculates annd outputs the total expenses entered by a user' do
+    it 'calculates and outputs the total expenses entered by a user' do
         cal = Calculations.new
         expect(cal.total_expense.class).not_to eq(String)
     end
   end
 
   describe '#left_over' do
-    it 'calculates annd outputs the difference between the total income and total expenes entered by a user' do
+    it 'calculates and outputs the difference between the total income and total expense entered by a user' do
       cal = Calculations.new
       expect(cal.left_over.class).to eq(Integer)
     end
 
-    it 'calculates annd outputs the difference between the total income and total expenes entered by a user' do
+    it 'calculates and outputs the difference between the total income and total expense entered by a user' do
         cal = Calculations.new
         expect(cal.left_over.class).not_to eq(String)
     end
