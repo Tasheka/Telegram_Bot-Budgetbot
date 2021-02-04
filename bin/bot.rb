@@ -1,10 +1,17 @@
+# !/usr/bin/env ruby
+
 # rubocop:disable Layout/LineLength
-# rubocop:disable  Metrics/BlockLength
+# rubocop:disable Metrics/BlockLength
+# rubocop:disable Style/GlobalVars
 
 require 'telegram/bot'
 
+require_relative '../token'
 require_relative '../lib/tips_tricks_list'
 require_relative '../lib/income_expenses_calculations'
+
+token_config = TokenConfiguration.new
+token = token_config.token
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
@@ -17,7 +24,7 @@ Telegram::Bot::Client.run(token) do |bot|
 
     when '/Tips'
       tip = RandomTipsTricks.new
-      bot.api.send_message(chat_id: message.chat.id, text: tip.random_tips_tricks)
+      bot.api.send_message(chat_id: message.chat.id, text: tip.output_tip)
       bot.api.send_message(chat_id: message.chat.id, text: "What would you like to do next? \n /Budget \n /Tips")
 
     when '/Budget'
@@ -101,4 +108,5 @@ Telegram::Bot::Client.run(token) do |bot|
 end
 
 # rubocop:enable Layout/LineLength
-# rubocop:enable  Metrics/BlockLength
+# rubocop:enable Metrics/BlockLength
+# rubocop:enable Style/GlobalVars

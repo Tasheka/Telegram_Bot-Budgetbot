@@ -1,3 +1,5 @@
+# rubocop:disable Style/GlobalVars
+
 class Calculations
   $income = []
 
@@ -19,3 +21,5 @@ class Calculations
     $income[0..$countIncome].sum - $expense[$countIncome..$count].sum
   end
 end
+
+# rubocop:enable Style/GlobalVars

@@ -1,7 +1,7 @@
 # Project Name
 Ruby Capstone: Telegram Bot - Budgetbot
 
-This project is a bot created  usinng telegram that takes a users incomes and expenses, and calculates the total income, total expenses and the remaining amount the user will have once he/she has paid his//her expenses. The bot also gives random financial tips and tricks when requested.
+This project is a bot created  using telegram that takes a users incomes and expenses, and calculates the total income, total expenses and the remaining amount the user will have once he/she has paid his//her expenses. The bot also gives random financial tips and tricks when requested.
 
 ![screenshot](assets/screenshot_tip.png)
 ![screenshot](assets/screenshot_budget.png)
@@ -14,7 +14,7 @@ This project is a bot created  usinng telegram that takes a users incomes and ex
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://www.loom.com/share/26ca9db9c24648ffa931508606c9024f)
 
 ## Getting Started
 
@@ -29,9 +29,19 @@ To run this bot locally, you will need to have:
 Once you have all the above listed:
 
 - Create a clone of this repository. 
-- In your terminal, run the bot.rb file.
-- Search Budgetbot in Telegram
-- Select 'start' to begin
+  - In your terminal type 'git clone https://github.com/Tasheka/Telegram_Bot-Budgetbot.git'
+  - From your terminal move into the cloned repository folder by using the 'cd' command
+- In your terminal, type 'bundle install' to  install the required gems
+- Create a 'token.rb' file. 
+- In this token.rb file, create a class called 'TokenConfiguration', containinng a method called 'token'. Paste the provided token in the method inside single quotes ' '.
+- From your terminal move into the bin folder by using the 'cd' command
+- Run the bot.rb file by typing 'bot.rb' in your terminal.
+- Search for your bot in Telegram
+- Select the 'start' button to begin or type '/start' to begin
+
+To test this bot using Rspec:
+
+- In your terminal, from the root folder, type 'rspec'
 
 ## Financial Tips and Tricks Origin
 
