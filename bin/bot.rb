@@ -23,7 +23,7 @@ Telegram::Bot::Client.run(token) do |bot|
 
     when '/Tips'
       tip = RandomTipsTricks.new
-      bot.api.send_message(chat_id: message.chat.id, text: tip.random_tips_tricks)
+      bot.api.send_message(chat_id: message.chat.id, text: tip.output_tip)
       bot.api.send_message(chat_id: message.chat.id, text: "What would you like to do next? \n /Budget \n /Tips")
 
     when '/Budget'
