@@ -3,6 +3,7 @@
 # rubocop:disable Layout/LineLength
 # rubocop:disable Metrics/BlockLength
 # rubocop:disable Style/GlobalVars
+# rubocop:disable Lint/ScriptPermission
 
 require 'telegram/bot'
 
@@ -110,3 +111,4 @@ end
 # rubocop:enable Layout/LineLength
 # rubocop:enable Metrics/BlockLength
 # rubocop:enable Style/GlobalVars
+# rubocop:enable Lint/ScriptPermission
